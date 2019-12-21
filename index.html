@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eagle Riders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link defer href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Eagle riders</div>
+        <div class="nav">
+            <nav>
+                <ul class="navLink">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <div class="burger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                    </div>
+                </ul>
+            </nav> 
+        </div>
+        <script>
+            const navSlide = ()=> {
+                const burger =document.querySelector('.burger');
+                const nav =document.querySelector('.navLink');
+                const navLinks=document.querySelectorAll('.navLink li');
+                console.log(navLinks)
+                burger.addEventListener('click',()=> {
+                    nav.classList.toggle('nav-active')
+
+                    //animate link
+                //   navLinks.forEach((link,index)=>{
+                //     link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 2}s`
+                //   })
+                  burger.classList.toggle('toggle')
+                })
+            }
+            navSlide();
+        </script>
+    </div>
+    <hr style="color:blue;padding: 0;margin: 0;">
+    <div class="showcase">
+        <div class="showcase-text">
+            <p class="main">Lorem ipsum dolor sit amet.</p>
+            <p class="dammi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, nesciunt?</p>
+            <button class="showcase-button"><a href="" style="text-decoration:none;color:rgb(0, 0, 0);font-weight: 500"> Get Started</a></button>
+        </div>
+    </div>
+
+    <!-- End of the showcase -->
+
+    <div class="what-we-do">
+        <div class="what">
+         <h1 class="">What we do ?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, id! Recusandae doloremque dicta dolore ipsa animi vitae mollitia quisquam possimus.</p>
+        </div>
+    </div>
+</body>
+</html>
